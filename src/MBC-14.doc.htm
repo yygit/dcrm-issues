@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#MBC-14] fix Yandex parser API</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://adagency.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [MBC-14]&nbsp;<a href="https://adagency.atlassian.net/browse/MBC-14">fix Yandex parser API</a>
+            <span class="subText">
+               Created: 21/Feb/17                   &nbsp;Updated: 23/Feb/17
+
+                                                    &nbsp;Resolved: 22/Feb/17
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://adagency.atlassian.net/secure/BrowseProject.jspa?id=10100">MixTraff CRM</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Component/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix Version/s:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                            <a class="user-hover" rel="4841601" id="word_reporter_4841601" href="https://adagency.atlassian.net/secure/ViewProfile.jspa?name=4841601">yybitb</a>
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                            <a class="user-hover" rel="4841601" id="word_assignee_4841601" href="https://adagency.atlassian.net/secure/ViewProfile.jspa?name=4841601">yybitb</a>
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-11808-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            None
+                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original Estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+    
+
+
+
+</table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>задача</b> - fix Yandex parser API</p>
+
+<p>ref. &#8211; <a href="https://adagency.atlassian.net/browse/MBC-7?focusedCommentId=11500&amp;page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-11500" class="external-link" rel="nofollow">comment</a> </p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>привет для парсинга используй следующее АПИ :
+https://yandex.ru/search/xml?user=di-maco&amp;key=03.289982573:cddaf5a2f72afc7e206ba79c3283168b&amp;query={QUERY}
+где
+{QUERY}
+заменить на запрос в urlencode
+Важно! АПИ будет работать только при запросах от сервера (там привязка к ИП 37.187.158.56)
+</pre>
+</div></div>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-11600"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="4841601" id="word_commented_4841601" href="https://adagency.atlassian.net/secure/ViewProfile.jspa?name=4841601">yybitb</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Feb/17</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11600"><td bgcolor="#ffffff">
+            <p>Комит e74200b - запрос и парсинг Yandex Serp <b>через прокси</b> 37.187.158.56. Прокси добавлен вручную через UI <a href="http://admincrm.mixtraff.com/?r=proxy/index" class="external-link" rel="nofollow">http://admincrm.mixtraff.com/?r=proxy/index</a></p>
+        </td></tr>
+                <tr id="comment-header-11609"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="4841601" id="word_commented_4841601" href="https://adagency.atlassian.net/secure/ViewProfile.jspa?name=4841601">yybitb</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Feb/17</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11609"><td bgcolor="#ffffff">
+            <p>запрос скриптом напрямую дает <b>error</b> </p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>[value] =&gt; Запрос пришёл с IP-адреса 2001:41d0:a:5e38::, не входящего в список разрешённых для данного пользователя
+</pre>
+</div></div>
+
+
+<p>запрос скриптом через указанный адрес <b>прокси</b> (geo = FR) ref "привязка к ИП 37.187.158.56" давал вчера ОК</p>
+        </td></tr>
+                <tr id="comment-header-11619"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="4841601" id="word_commented_4841601" href="https://adagency.atlassian.net/secure/ViewProfile.jspa?name=4841601">yybitb</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Feb/17</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11619"><td bgcolor="#ffffff">
+            <p>Комит 775f2537977 -  отменил исп. прокси (перепривязка на ипв6, <b>запрос напрямую</b>)</p>
+
+<p>ref. comment <a href="https://adagency.atlassian.net/browse/MBC-15?focusedCommentId=11617&amp;page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-11617" class="external-link" rel="nofollow">CommentId=11617</a></p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>Denys Shadow added a comment - Yesterday
+по неизвестным причинам яндекс перешел на ипв6 о_0. перепривязал , теперь все ок , пример : 
+http://crm.mixtraff.com/phpinfo.php
+</pre>
+</div></div>
+        </td></tr>
+                <tr id="comment-header-11620"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                        <a class="user-hover" rel="4841601" id="word_commented_4841601" href="https://adagency.atlassian.net/secure/ViewProfile.jspa?name=4841601">yybitb</a>
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Feb/17</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-11620"><td bgcolor="#ffffff">
+            <p>прокси  </p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>37.187.158.56:3752</pre>
+</div></div>
+<p> удалил из списка <a href="http://admincrm.mixtraff.com/?r=proxy" class="external-link" rel="nofollow">http://admincrm.mixtraff.com/?r=proxy</a></p>
+        </td></tr>
+            </table>
+Generated at Thu Sep 14 07:14:48 UTC 2017 by yybitb using JIRA 1001.0.0-SNAPSHOT#100059-sha1:5bc2bce065aebd69bf5a23bc3efdd94fd09dddc8.
+
+</body>
+</html>
